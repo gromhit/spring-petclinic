@@ -11,4 +11,4 @@ jobs:
   call-hello-template:
     uses: ./.github/workflows/hello-template.yml
     with:
-      username: Mona
+      username: Grom
