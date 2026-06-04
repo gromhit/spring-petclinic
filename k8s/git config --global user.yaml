@@ -1,0 +1,10 @@
+git config --global user.name "gromhit"
+git config --global user.email "grom.lavigne@gmail.com"
+git config --global init.defaultBranch main
+git config --global --list
+echo 'export GITHUB_USER="grom.lavigne@gmail.com"' > ~/gitops.env
+source ~/gitops.env
+git clone https://github.com/gromhit/spring-petclinic.git
+cd spring-petclinic
+
+./mvnw spring-boot:build-image -DskipTests
